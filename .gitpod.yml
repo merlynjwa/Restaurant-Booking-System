@@ -6,6 +6,7 @@ tasks:
   - command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
 vscode:
   extensions:
+    - ms-python.isort
     - ms-python.python
     - formulahendry.auto-close-tag
     - eventyret.bootstrap-4-cdn-snippet
