@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def home_page(request):
     return render(request, 'restaurant_booking_system/home_page.html')
+
+
+def create_order(request):
+    return render(request, 'restaurant_booking_system/create_order.html')

@@ -20,4 +20,5 @@ from restaurant_booking_system import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_page, name='home_page'),
+    path('create_order', views.create_order, name='create_order'),
 ]
