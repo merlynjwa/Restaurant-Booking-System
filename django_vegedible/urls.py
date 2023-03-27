@@ -1,4 +1,4 @@
-"""django_restaurant_booking_system URL Configuration
+"""django_vegedible URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from vegedible import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home_page, name='home_page'),
+    path('create_order', views.create_order, name='create_order'),
 ]
