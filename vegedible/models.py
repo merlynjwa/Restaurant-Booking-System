@@ -6,10 +6,11 @@ from django.core import validators
 
 class Customer(models.Model):
     email = models.EmailField(primary_key=True)
-    name = models.CharField(max_length=30)
+    first_name = models.CharField(max_length=15)
+    last_name = models.CharField(max_length=15)
 
     def __str__(self):
-        return self.name
+        return '%s %s' % (self.first_name, self.last_name)
 
 
 class Order(models.Model):
