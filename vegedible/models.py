@@ -10,7 +10,9 @@ class Customer(models.Model):
     last_name = models.CharField(max_length=15)
 
     def __str__(self):
-        return '%s %s' % (self.first_name, self.last_name)
+        return '%s (%s %s)' % (self.email,
+                               self.first_name,
+                               self.last_name)
 
 
 class Order(models.Model):
