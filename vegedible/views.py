@@ -13,4 +13,8 @@ def create_order(request):
 
 
 def show_orders(request):
-    return render(request, 'vegedible/show_orders.html')
+    orders = Order.objects.all()
+    context = {
+        'orders': orders
+    }
+    return render(request, 'vegedible/show_orders.html', context)

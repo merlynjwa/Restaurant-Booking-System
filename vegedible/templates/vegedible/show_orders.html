@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    
+    <h1>Orders</h1>
+    {% if orders %}
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <b>Customer</b>
+                </th>
+                <th>
+                    <b>Date & Time</b>
+                </th>
+                <th>
+                    <b>Table number</b>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.customer }}</td>
+                <td>{{ order.date_and_time }}</td>
+                <td>{{ order.table_number }}</td>
+            </tr>
+            {% empty %}
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>There are no order to show</p>
+    {% endif %}
 </body>
 </html>
