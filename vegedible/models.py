@@ -18,7 +18,7 @@ class Order(models.Model):
     table_number = models.IntegerField(
         validators=[validators.MinValueValidator(1),
                     validators.MaxValueValidator(10)],
-        unique_for_date=date_and_time
+        unique_for_date='date_and_time'
         )
 
     def __str__(self):
