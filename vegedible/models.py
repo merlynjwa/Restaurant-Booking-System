@@ -25,4 +25,6 @@ class Order(models.Model):
         )
 
     def __str__(self):
-        return '%s - Table no. %s' % (self.date_and_time, self.table_number)
+        return '%s - Table no. %s - %s' % (self.date_and_time,
+                                           self.table_number,
+                                           self.customer)
