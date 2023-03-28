@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Customer, Order
 
 # Create your views here.
 
@@ -9,3 +10,7 @@ def home_page(request):
 
 def create_order(request):
     return render(request, 'vegedible/create_order.html')
+
+
+def show_orders(request):
+    return render(request, 'vegedible/show_orders.html')
