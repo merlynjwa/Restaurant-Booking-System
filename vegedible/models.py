@@ -5,7 +5,7 @@ from django.core import validators
 # Create your models here.
 
 
-class Customer(AbstractUser):
+class User(AbstractUser):
     username = models.CharField(max_length=40, unique=True)
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=15)
@@ -24,7 +24,7 @@ class Customer(AbstractUser):
 
 
 class Order(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    customer = models.ForeignKey(User, on_delete=models.CASCADE)
     date_and_time = models.DateTimeField()
     table_number = models.IntegerField(
         validators=[validators.MinValueValidator(1),

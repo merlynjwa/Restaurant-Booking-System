@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Customer, Order
+from .models import User, Order
 
 # Register your models here.
 
-admin.site.register(Customer, UserAdmin)
+admin.site.register(User, UserAdmin)
 admin.site.register(Order)
