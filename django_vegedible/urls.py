@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from vegedible import views
 
 urlpatterns = [
@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.home_page, name='home_page'),
     path('create_order', views.create_order, name='create_order'),
     path('show_orders', views.show_orders, name='show_orders'),
+    path('accounts/', include('allauth.urls')),
 ]
