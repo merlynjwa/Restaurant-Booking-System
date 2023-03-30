@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import User, Order
+from .forms import OrderForm
 
 # Create your views here.
 
@@ -17,4 +18,14 @@ def orders(request):
 
 
 def create_order(request):
-    return render(request, 'vegedible/create_order.html')
+    if request.method == 'POST':
+        order = OrderForm(request.POST)
+        if order.is_valid():
+            order.instance.customer = request.user
+            order.save()
+            return redirect('orders')
+    order = OrderForm()
+    context = {
+        'order': order
+    }
+    return render(request, 'vegedible/create_order.html', context)

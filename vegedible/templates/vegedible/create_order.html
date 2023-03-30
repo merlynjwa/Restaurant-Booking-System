@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    
+    <form action="create_order" method="POST">
+        {% csrf_token %}
+        {{ order }}
+        <label for="datetime">Date and time for the booking:</label>
+        <input required id="datetime" type="datetime-local" name="date_and_time">
+        <div>
+            <button type="submit">Book order</button>
+        </div>
+    </form>
 </body>
 </html>
