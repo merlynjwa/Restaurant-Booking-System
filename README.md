@@ -1,5 +1,7 @@
 # Vegedible
 
+## Wireframes
+
 ## Models
 
 ### Customer
