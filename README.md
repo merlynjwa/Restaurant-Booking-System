@@ -21,6 +21,16 @@ The skeleton of the menu is the same for all sections of the site.
 The skeleton of the sign up page when it is displayed on a mobile device:
 ![Skeleton of the signup page, when displayed on a mobile device](./docs/images/wireframes/mobile/Sign_Up_Page__Mobile__Wireframes.png)
 
+#### Order Booking Page
+
+Skeleton of the booking page when you are first placing an order:
+
+![Skeleton of the booking page when you are first placing an order](./docs/images/wireframes/mobile/Book_an_Order__Mobile__Wireframes.png)
+
+Skeleton of the booking page when you are updating a previously made order, either to change some of the details, or to cancel the order:
+
+![Skeleton of the booking page when you are updating a previously made order, either to change some of the details, or to cancel the order](./docs/images/wireframes/mobile/Update_or_Cancel_an_Order__Mobile__Wireframes.png)
+
 ## Models
 
 ### Customer
