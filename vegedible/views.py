@@ -17,7 +17,7 @@ def create_order(request):
 
 
 def show_orders(request):
-    orders = Order.objects.all()
+    orders = Order.objects.filter(customer=request.user.id)
     context = {
         'orders': orders
     }
