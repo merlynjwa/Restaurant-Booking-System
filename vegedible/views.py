@@ -8,6 +8,10 @@ def home_page(request):
     return render(request, 'vegedible/home_page.html')
 
 
+def orders(request):
+    return render(request, 'vegedible/orders.html')
+
+
 def create_order(request):
     return render(request, 'vegedible/create_order.html')
 
