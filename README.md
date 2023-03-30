@@ -4,6 +4,18 @@
 
 ### Mobile
 
+#### Homepage
+
+The skeleton of the homepage when displayed on a mobile device:
+![Skeleton of the homepage when displayed on a mobile device](./docs/images/wireframes/mobile/Homepage__Mobile__Wireframes.png)
+
+The first image is when the page is scrolled to the top, the second is when it's scrolled to the bottom of the page.
+
+Skeleton of the header's menu, having been opened on the homepage:
+![Skeleton of the homepage, displayed on a mobile device, with the hamburger menu open](./docs/images/wireframes/mobile/Homepage_with_Open_Menu__Mobile__Wireframes.png)
+
+The skeleton of the menu is the same for all sections of the site.
+
 ## Models
 
 ### Customer
