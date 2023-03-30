@@ -16,6 +16,11 @@ Skeleton of the header's menu, having been opened on the homepage:
 
 The skeleton of the menu is the same for all sections of the site.
 
+#### Sign Up Page
+
+The skeleton of the sign up page when it is displayed on a mobile device:
+![Skeleton of the signup page, when displayed on a mobile device](./docs/images/wireframes/mobile/Sign_Up_Page__Mobile__Wireframes.png)
+
 ## Models
 
 ### Customer
