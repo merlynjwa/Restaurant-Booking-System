@@ -9,16 +9,12 @@ def home_page(request):
 
 
 def orders(request):
-    return render(request, 'vegedible/orders.html')
-
-
-def create_order(request):
-    return render(request, 'vegedible/create_order.html')
-
-
-def show_orders(request):
     orders = Order.objects.filter(customer=request.user.id)
     context = {
         'orders': orders
     }
-    return render(request, 'vegedible/show_orders.html', context)
+    return render(request, 'vegedible/orders.html', context)
+
+
+def create_order(request):
+    return render(request, 'vegedible/create_order.html')

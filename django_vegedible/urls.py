@@ -22,6 +22,5 @@ urlpatterns = [
     path('', views.home_page, name='home_page'),
     path('orders/', views.orders, name='orders'),
     path('create_order', views.create_order, name='create_order'),
-    path('show_orders', views.show_orders, name='show_orders'),
     path('accounts/', include('allauth.urls')),
 ]

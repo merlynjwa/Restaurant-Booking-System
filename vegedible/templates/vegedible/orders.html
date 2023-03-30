@@ -6,6 +6,36 @@
 </head>
 <body>
     {% if user.is_authenticated %}
+    <h1>Orders</h1>
+    {% if orders %}
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <b>Customer</b>
+                </th>
+                <th>
+                    <b>Date & Time</b>
+                </th>
+                <th>
+                    <b>Table number</b>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.customer }}</td>
+                <td>{{ order.date_and_time }}</td>
+                <td>{{ order.table_number }}</td>
+            </tr>
+            {% empty %}
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>There are no order to show</p>
+    {% endif %}
     {% else %}
     <p>
         You need to be logged in to an account
