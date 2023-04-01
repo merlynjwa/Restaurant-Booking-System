@@ -59,3 +59,8 @@ The table number has to be unique for each date & time value.
 The table number is also restricted to only accept integer values from 1 to 10.
 
 ## Credits
+
+### Google Fonts
+
+I have imported 'Bebas Neue' and 'Comfortaa' from Google Fonts.
+These two font families are provided under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)

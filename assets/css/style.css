@@ -1,1 +1,5 @@
-
+/* Import 'Bebas Neue' and 'Comfortaa' from Google Fonts.
+ * Both of these font families are provided under the SIL Open Font License:
+ * https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300&display=swap');
