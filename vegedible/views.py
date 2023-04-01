@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import User, Order
 from .forms import OrderForm
 
@@ -29,3 +29,19 @@ def create_order(request):
         'order': order
     }
     return render(request, 'vegedible/create_order.html', context)
+
+
+def edit_order(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    if order.customer != request.user:
+        return render(request, 'vegedible/edit_order_not_authorised.html')
+    if request.method == 'POST':
+        form = OrderForm(request.POST, instance=order)
+        if form.is_valid():
+            form.save()
+            return redirect('orders')
+    form = OrderForm(instance=order)
+    context = {
+        'form': form
+    }
+    return render(request, 'vegedible/edit_order.html', context)
