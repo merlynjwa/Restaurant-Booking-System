@@ -24,6 +24,9 @@
                 <th>
                     <b>Edit booking</b>
                 </th>
+                <th>
+                    <b>Delete booking</b>
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +37,9 @@
                 <td>{{ order.table_number }}</td>
                 <td>
                     <a href="/orders/edit/{{ order.id }}">Edit</a>
+                </td>
+                <td>
+                    <a href="/orders/delete/{{ order.id }}">Delete</a>
                 </td>
             </tr>
             {% empty %}

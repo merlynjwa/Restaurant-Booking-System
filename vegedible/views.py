@@ -45,3 +45,11 @@ def edit_order(request, order_id):
         'form': form
     }
     return render(request, 'vegedible/edit_order.html', context)
+
+
+def delete_order(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    if order.customer != request.user:
+        return render(request, 'vegedible/edit_order_not_authorised.html')
+    order.delete()
+    return redirect('orders')
