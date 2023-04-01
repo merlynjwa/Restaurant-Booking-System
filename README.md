@@ -57,3 +57,5 @@ The customer field is a foreign key to the customer model, allowing each order t
 
 The table number has to be unique for each date & time value.
 The table number is also restricted to only accept integer values from 1 to 10.
+
+## Credits
