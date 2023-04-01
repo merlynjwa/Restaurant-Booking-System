@@ -7,7 +7,7 @@
 <body>
     <form action="create_order" method="POST">
         {% csrf_token %}
-        {{ order }}
+        {{ order.as_p }}
         <div>
             <button type="submit">Book order</button>
         </div>
