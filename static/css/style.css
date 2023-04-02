@@ -3,3 +3,7 @@
  * https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
  */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+}
