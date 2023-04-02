@@ -10,6 +10,7 @@
 <body>
     <a href="/orders">Back</a>
     <form method="POST">
+        <p>Table numbers range from 1 to 10, inclusive</p>
         {% csrf_token %}
         {{ form.as_p }}
         <div>
