@@ -19,3 +19,7 @@ class TestOrderForm(TestCase):
         self.assertIn('date_and_time', form.errors.keys())
         self.assertEqual(form.errors['date_and_time'][0],
                          'This field is required.')
+
+    def test_explicit_fields_in_form_metaclass(self):
+        form = OrderForm()
+        self.assertEqual(form.Meta.fields, ['table_number', 'date_and_time'])
