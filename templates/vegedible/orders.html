@@ -11,6 +11,8 @@
     {% if user.is_authenticated %}
     <h1>Orders</h1>
     <a href="/create_order">Create an order</a>
+    <a href="/">Home</a>
+    <a href="/accounts/logout">Logout</a>
     {% if orders %}
     <table>
         <thead>

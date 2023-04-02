@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <a href="/orders">Back</a>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
