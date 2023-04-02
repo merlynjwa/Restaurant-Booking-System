@@ -52,17 +52,19 @@ Diagram of the relationship between the two models designed for this application
 ![Diagram of the relationship between the two models designed for this application](./docs/images/database/models/database_model_relationship.png)
 
 I designed two models for this application:
-* User, which is a subclass of the AbstractUser class from Django's auth library. The model has 5 required fields, username, email, password, first_name and last_name. As I did not work out a way of including the first_name and last_name fields in to the form for the signup page, new users are created with this field being empty.
+* User
 * Order, which uses the User model as a foreign key for its customer field. The model has a date_and_time field and a table_number.
 
-### Customer
+### User
 
-The customer model contains two fields:
+The user model contains the following fields:
 * Email
-* Name
+* Username
+* First name
+* Last name
+* Password (inherited from AbstractUser)
 
-The email field serves as the primary key of the 'Customer' table.
-My reasoning for this choice is that there could be multiple customers with the same name, but they should each have a unique email address.
+As I did not work out a way of including the first_name and last_name fields in to the form for the signup page, new users are created with this field being empty.
 
 ### Order
 
