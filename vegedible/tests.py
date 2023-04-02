@@ -23,3 +23,7 @@ class TestOrderForm(TestCase):
     def test_explicit_fields_in_form_metaclass(self):
         form = OrderForm()
         self.assertEqual(form.Meta.fields, ['table_number', 'date_and_time'])
+
+
+class TestViews(TestCase):
+
