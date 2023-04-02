@@ -89,3 +89,8 @@ These two font families are provided under the [SIL Open Font License](https://s
 
 Unsurprisingly, this project makes use of software libraries under the Django project.
 This software is licensed under the [BSD 3-Clause license](https://github.com/django/django/blob/3.2.18/LICENSE), which is an open-source and free liberties license.
+
+### Bootstrap
+
+I made use of Bootstrap for this project.
+This is available under an [MIT License](https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE), which is an open source and free liberties license.
