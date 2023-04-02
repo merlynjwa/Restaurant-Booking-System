@@ -53,7 +53,7 @@ Diagram of the relationship between the two models designed for this application
 
 I designed two models for this application:
 * User
-* Order, which uses the User model as a foreign key for its customer field. The model has a date_and_time field and a table_number.
+* Order
 
 ### User
 
@@ -73,7 +73,7 @@ The order model contains the following fields:
 * Date & Time
 * Table number
 
-The customer field is a foreign key to the customer model, allowing each order to be associated with one customer.
+The customer field is a foreign key to the user model, allowing each order to be associated with one customer.
 
 The table number has to be unique for each date & time value.
 The table number is also restricted to only accept integer values from 1 to 10.
