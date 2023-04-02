@@ -84,3 +84,8 @@ The table number is also restricted to only accept integer values from 1 to 10.
 
 I have imported 'Bebas Neue' and 'Comfortaa' from Google Fonts.
 These two font families are provided under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+
+### Django
+
+Unsurprisingly, this project makes use of software libraries under the Django project.
+This software is licensed under the [BSD 3-Clause license](https://github.com/django/django/blob/3.2.18/LICENSE), which is an open-source and free liberties license.
