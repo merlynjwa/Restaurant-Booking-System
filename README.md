@@ -7,6 +7,10 @@ I created a number of user stories to guide my planning and design of the bookin
 I made use of the Github issue tracker and created a board view of the stories, split into categories of 'Todo', 'In Progress' and 'Done'.
 The board is viewable [here.](https://github.com/users/merlynjwa/projects/1)
 
+## Models
+
+
+
 ## Wireframes
 
 ### Homepage
