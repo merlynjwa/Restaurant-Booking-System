@@ -94,3 +94,8 @@ This software is licensed under the [BSD 3-Clause license](https://github.com/dj
 
 I made use of Bootstrap for this project.
 This is available under an [MIT License](https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE), which is an open source and free liberties license.
+
+### Python
+
+Again, unsurprisingly, this project makes use of Python.
+Python software and documentation is licensed under the [PSF License Agreement](https://docs.python.org/3/license.html#psf-license)
