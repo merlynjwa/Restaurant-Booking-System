@@ -18,9 +18,7 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return '%s (%s %s)' % (self.email,
-                               self.first_name,
-                               self.last_name)
+        return '%s (%s)' % (self.email, self.username)
 
 
 class Order(models.Model):
