@@ -19,14 +19,14 @@ def orders(request):
 
 def create_order(request):
     if request.method == 'POST':
-        order = OrderForm(request.POST)
-        if order.is_valid():
-            order.instance.customer = request.user
-            order.save()
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form.instance.customer = request.user
+            form.save()
             return redirect('orders')
-    order = OrderForm()
+    form = OrderForm()
     context = {
-        'order': order
+        'form': form
     }
     return render(request, 'vegedible/create_order.html', context)
 
