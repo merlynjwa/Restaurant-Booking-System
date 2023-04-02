@@ -7,16 +7,6 @@ I created a number of user stories to guide my planning and design of the bookin
 I made use of the Github issue tracker and created a board view of the stories, split into categories of 'Todo', 'In Progress' and 'Done'.
 The board is viewable [here.](https://github.com/users/merlynjwa/projects/1)
 
-## Models
-
-Diagram of the relationship between the two models designed for this application:
-
-![Diagram of the relationship between the two models designed for this application](./docs/images/database/models/database_model_relationship.png)
-
-I designed two models for this application:
-* User, which is a subclass of the AbstractUser class from Django's auth library. The model has 5 required fields, username, email, password, first_name and last_name. As I did not work out a way of including the first_name and last_name fields in to the form for the signup page, new users are created with this field being empty.
-* Order, which uses the User model as a foreign key for its customer field. The model has a date_and_time field and a table_number.
-
 ## Wireframes
 
 ### Homepage
@@ -56,6 +46,14 @@ Skeleton of the booking page when you are updating a previously made order, eith
 ![Skeleton of the booking page when you are updating a previously made order, either to change some of the details, or to cancel the order](./docs/images/wireframes/order_booking/mobile/Update_or_Cancel_an_Order__Mobile__Wireframes.png)
 
 ## Models
+
+Diagram of the relationship between the two models designed for this application:
+
+![Diagram of the relationship between the two models designed for this application](./docs/images/database/models/database_model_relationship.png)
+
+I designed two models for this application:
+* User, which is a subclass of the AbstractUser class from Django's auth library. The model has 5 required fields, username, email, password, first_name and last_name. As I did not work out a way of including the first_name and last_name fields in to the form for the signup page, new users are created with this field being empty.
+* Order, which uses the User model as a foreign key for its customer field. The model has a date_and_time field and a table_number.
 
 ### Customer
 
